@@ -3,35 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clics Challenge</title>
+    <title>Shooting Challenge</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Clics Challenge</h1>
+    <h1>Shooting Challenge</h1>
     <label>Durée(s)</label>
     <input id="duration" type="number" min="3" max="120">
-
-    <!-- Add IDs here -->
     <button id="buttonStart">Start</button>
     <button id="buttonReset">Reset</button>
-
+    <section class="game">
+        <button id="punchbutton">❌</button>
+    </section>
     <section class="stats">
         <p>
-          Temps restant: <span id="time">10</span>s
+          Temps restant: <span id="time">0</span>s
           Score: <span id="score">0</span>
           CPS: <span id="cps">0.00</span>
         </p>
     </section>
 
-    <section class="game">
-        <!-- Add ID here -->
-        <button id="punchbutton">Punch it🥊</button>
-    </section>
-
     <section class="best">
         Best Score: <span id="best">0</span>
     </section>
-
+    <audio id="shootSound" src="pistolshot.mp3" preload="auto"></audio>
+    <audio id="reload" src="reload.mp3" preload="auto"></audio>
     <script src="script.js"></script>
 </body>
 </html>
