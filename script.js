@@ -78,9 +78,11 @@ resetBtn.addEventListener("click", () => {
   score = 0;
   timeLeft = 0;
   gameRunning = false;
+  reload.play();
   scoreDisplay.textContent = "0";
   timeDisplay.textContent = "0";
   cpsDisplay.textContent = "0.00";
   durationInput.value = "";
 });
 shootSound.volume = 0.6
+
