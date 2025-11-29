@@ -14,17 +14,16 @@ img {
 }
 /* Title */
 h1 {
-  font-size: 2.5rem;
+  font-size: 48px;
   color: #ff4444;
   text-shadow: 2px 2px 6px black;
   margin-top: 20px;
   padding: 60px;
-  font-size: 48px;
   background-image: url("punched.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
-
 
 label {
   font-size: 1.2rem;
@@ -111,4 +110,5 @@ button {
 }
 #punchbutton:active #punchImage {
   transform: scale(1);
+
 }
